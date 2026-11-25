@@ -1,0 +1,42 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+@source '../../app/Livewire/**/*.php';
+
+@theme {
+    --font-sans: 'Geist', ui-sans-serif, system-ui, sans-serif;
+    --font-family-primary: 'Geist', sans-serif;
+    --color-primary: #0f766e;
+    --color-secondary: #2563eb;
+    --color-dark: #1e293b;
+    --color-light: #f8f9fa;
+    --color-success: #059669;
+    --color-warning: #d97706;
+    --color-danger: #b91c1c;
+    --color-info: #0ea5e9;
+    --color-orange: #e65100;
+    --color-purple: #6a1b9a;
+    --color-pink: #cc25b0;
+    --color-indigo: #303f9f;
+    --color-primary-hover: #0c6760;
+    --color-success-hover: #04845c;
+    --color-danger-hover: #a31717;
+    --color-primary-transparent: #ebf2f1;
+    --color-secondary-transparent: #eaf2ff;
+    --color-success-transparent: #ecf5f1;
+    --color-warning-transparent: #fdf3ec;
+    --color-danger-transparent: #fcecea;
+    --color-info-transparent: #eef7fe;
+    --color-purple-transparent: #f1ebf7;
+    --color-pink-transparent: #fdedf8;
+    --color-orange-transparent: #fff0eb;
+    --color-default: #67707d;
+    --color-title: #2f3a4b;
+    --color-border-color: #e8e9ec;
+    --color-light-500: #f1f4f7;
+}
